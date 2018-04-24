@@ -1,6 +1,6 @@
 
 import React ,{ Component } from 'react'
-//import axios from 'axios'
+import axios from 'axios'
 
 import Swiper from 'swiper' 
 import 'swiper/dist/css/swiper.min.css'
@@ -30,10 +30,22 @@ class Banner extends Component {
             </div>     
            )
     }
-      
-   
+      //iid=1ls9sfo&_ajax=1&cparam=
+   getBannerImg(){
+        axios.get('mls/detail/mls/v1/h5?',{
+            params:{
+                iid:'1ls9sfo' ,
+                _ajax:'1',
+                cparam:''
+            }
+        }).then((res)=>{
+            console.log(res)
+        })
+   }
 
-
+   componentWillMount(){
+       this.getBannerImg()
+   }
 
 
     
