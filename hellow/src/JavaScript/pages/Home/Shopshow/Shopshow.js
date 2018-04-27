@@ -49,5 +49,5 @@ class Shopshow extends Component{
 	}
 }
 
-export default Shopshow
+ export default Shopshow
 //http://list.meilishuo.com/search?frame=1&page=1&cKey=wap-index&tag=&maxPrice=&minPrice=&fcid=&_mgjuuid=365e29f9-6676-4806-be06-2d060f4321d0&sort=pop&_=1524722583082&callback=jsonp4
