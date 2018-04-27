@@ -1,0 +1,94 @@
+.break{
+    width:100%;
+    background: #fff;
+}
+.name{
+    display: block;
+    width: 3.49rem;
+    height: 0.38rem;
+    margin-top:0.19rem;
+    padding:0 0.1rem;  
+    font-weight:0.64rem ;
+    color: #424242;
+}
+.Price_box{
+    width: 3.55rem;
+    height: 0.22rem;
+    padding:0 0.1rem;
+    margin-top:0.12rem;  
+    display: flex;
+    background: #fff;
+}
+.now{
+    line-height: 0.22rem;
+    color: #f69;
+    font-size: 0.2rem;
+    
+}
+.original{
+    line-height: 0.22rem;
+    margin: 0  0.07rem 0 0.075rem ;
+    color: #999;
+    font-size: 0.12rem;
+    text-decoration: line-through;
+}
+
+.discount{
+    background-color: #FF6699 ;
+    display:inline-block;
+    height: 0.16rem;
+    width: 0.5rem;
+    padding: 0 0.06rem;
+    font-size:0.12rem; 
+    border-radius:0.1rem; 
+    color: #FFf;
+}
+.info-other{
+    width: 3.55rem;
+    height: 0.13rem;
+    line-height: 0.13rem;
+    margin: 0.2rem 0.1rem 0.1rem 0.1rem ;
+    display: flex;
+    justify-content: space-around;
+    color: #999;
+}
+.info-other{
+    display: flex;
+    justify-content: space-around;
+}
+.item{
+    font-size:0.14rem; 
+}
+.info-services{
+    padding: 0.17rem 0; 
+    border-top: 1px solid #eee;
+    border-bottom: 5px solid #f2f5f8;
+}
+.flex{
+    width: 3.58rem;
+    height: 0.22rem;
+    line-height:  0.22rem;
+    display: flex;
+   
+    margin: 0 0.1rem;
+   
+}
+.service-icon{
+   width: 0.14rem;
+   height: 0.14rem;
+}
+.service-name{
+    background: #fff;
+    font-size:0.14rem;
+    color: #666;
+}
+.service-item{
+    margin-right:0.1rem; 
+}
+
+.service-arrow{
+    margin-left:0.5rem; 
+    margin-top:0.06rem; 
+    width: 0.07rem;
+    height: 0.11rem;
+}
