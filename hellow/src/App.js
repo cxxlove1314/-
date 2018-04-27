@@ -9,13 +9,14 @@ import store from './store'
 
 import Header from './JavaScript/commons/Header' 
 import Footer from './JavaScript/commons/Footer'
-import { Home , ClassiFication , Me , Car } from './JavaScript/pages' 
+import { Home , ClassiFication , Me , Car, Detail } from './JavaScript/pages' 
 
 let routers = [
   {path:'/',compoent:Home ,exact:true},
   {path:'/ClassiFication',compoent:ClassiFication},
   {path:'/Car',compoent:Car },
-  {path:'/Me',compoent:Me}
+  {path:'/Me',compoent:Me},
+  {path:'/detail/:iid',compoent:Detail}
 ]
 
 class App extends Component {

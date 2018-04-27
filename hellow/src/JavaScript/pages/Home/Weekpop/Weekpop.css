@@ -1,0 +1,19 @@
+.week{
+	height:3.22rem;
+	background:#fff;
+}
+.img{
+	height:2.76rem;
+}
+.img img{
+	width:100%;
+	height:100%;
+}
+.more{
+	height:.47rem;
+	font-size:.12rem;
+	line-height:.47rem;
+	text-align:center;
+	color:#f36;
+	margin:0;
+}

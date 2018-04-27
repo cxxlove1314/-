@@ -1,12 +1,13 @@
 
 import React , { Component } from  'react' 
 import { NavLink } from 'react-router-dom'
+import './index.css'
 
 
 let  NavItem = (props)=> {
    let { title , ico, path } = props.info 
     return (
-                <NavLink className="tab-item external active" to={{pathname:path}} >
+                <NavLink className=" active" to={{pathname:path}} >
                     <span className={`icon icon-${ico}`}></span>
                     <span className="tab-label">{title}</span>
                 </NavLink>  
@@ -20,7 +21,7 @@ class Footer extends Component {
     render() {
         let { navs } =this.props
         return (
-            <nav className="bar bar-tab">
+            <nav className="footer">
                    {
                        navs.map((item) => {
                             return <NavItem key={ item.id } info = {item}  />

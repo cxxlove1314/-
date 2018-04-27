@@ -1,0 +1,24 @@
+.data{
+	width:3.75rem;
+	height:1.31rem;
+	background:#fff;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	margin-bottom:10px;
+}
+.navItem img{
+	width:.8rem;
+	height:.8rem;
+}
+.navItem p{
+	text-align: center;
+    font-size: 0.14rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 0.06rem;
+    line-height: 0.22rem;
+    color:#666;
+    margin:0;
+}
