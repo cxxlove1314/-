@@ -1,0 +1,130 @@
+.ShopBox{
+    width: 3.55rem;
+    height: 1.95rem;
+    margin: 0 0.1rem;
+    padding: 0 0.1rem;
+    border-bottom:5px solid #f2f5f8 ; 
+}
+.clearfix{
+    height: 0.47rem;
+    display: flex;
+   position: relative;
+   background: #fff;
+    
+}
+.clearfix a{
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius:50%;
+    overflow: hidden;  
+}
+.clearfix a img{
+    width: 100%;
+    height: 100%
+}
+.title_name{
+    width: 0.8rem;
+    height: 0.45rem;
+    line-height: 0.45rem;
+    font-size:0.16rem !important; 
+    margin: 0;  
+    margin-left: 0.1rem ;
+}
+
+.shop-collect{
+    width: 0.65rem;
+    height: 0.25rem;
+    background: #f69;
+    color: #fff;
+    font-size:0.14rem;
+    text-align: center;
+    line-height: 0.25rem; 
+    border-radius:1rem; 
+    position: absolute;
+    right: 0;
+    top:8px;
+}
+
+.info-content{
+    width: 100%;
+    height: 0.66rem;
+}
+
+
+.count{
+    width: 1.76rem;
+    height: 0.5rem;
+    border-right:1px solid #eee; 
+    font-size:0.12rem !important; 
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    margin-top:0.2rem; 
+}
+.fz-18{
+    display: inline-block;
+    height: 0.27rem;
+    font-size:0.15rem; 
+    margin-bottom:0.06rem; 
+}
+.shop-evaluate{
+    float: left;
+}
+li{
+    list-style: none !important;
+    font-size:0.16rem!important; 
+}
+
+.shop-evaluate{
+    height: 0.5rem;
+    width: 1.3rem;
+    float: right;
+    
+}
+.shop-evaluate ul{
+    margin: 0;
+    padding: 0;
+    font-size:0.14rem;
+    line-height: 0.15rem; 
+    margin-top:0.12rem; 
+}
+em,i{
+    font-size:  0.12rem;
+    font-style: normal;
+}
+em{
+    display: inline-block;
+    width: 0.26rem;
+    height: 0.22rem;
+    margin-left:0.1rem; 
+}
+i{
+    display: inline-block;
+    width:0.15rem;
+    height: 0.15rem;
+    color: #fff;
+    
+    text-align: center;
+    line-height: 0.15rem;
+}
+
+.info-goshop a{
+    display: inline-block;
+    width: 1.5rem;
+    height: 0.3rem;
+    background: #f2f5f8;
+    color: #666;
+    font-size:0.14rem; 
+    line-height: 0.3rem;
+    border-radius: 0.3rem;
+}
+.info-goshop{
+    width: 1.5rem;
+    display: flex;
+    margin-top:0.2rem; 
+    height: 0.3rem;
+    text-align: center;
+    margin-left:27%; 
+}
+

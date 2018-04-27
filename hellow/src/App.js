@@ -9,10 +9,12 @@ import store from './store'
 
 import Header from './JavaScript/commons/Header' 
 import Footer from './JavaScript/commons/Footer'
-import { Home , ClassiFication , Me , Car } from './JavaScript/pages' 
+import { Home , ClassiFication , Me , Car   } from './JavaScript/pages'
+
+ import Detailed from './JavaScript/pages/Home/Detailed'
 
 let routers = [
-  {path:'/',compoent:Home ,exact:true},
+  {path:'/Home',compoent:Home ,exact:true},
   {path:'/ClassiFication',compoent:ClassiFication},
   {path:'/Car',compoent:Car },
   {path:'/Me',compoent:Me}
@@ -36,6 +38,11 @@ class App extends Component {
                           return <Route exact={ item.exact } path={ item.path } component={ item.compoent }  key={ item.path }  />
                     })
                   }
+                 
+                 <Route exact path={`/Home/detailed`} component={Detailed} />
+                  
+                  
+
 
                 </Switch>
                   
@@ -47,7 +54,7 @@ class App extends Component {
   }
 }
 
-export default App;
+export default  App;
 // Sorry, nothing to see here.
 //  8888888
 //                8888:::8888888888888888888888888

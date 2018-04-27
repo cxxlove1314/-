@@ -36,7 +36,7 @@ class Footer extends Component {
 }
 Footer.defaultProps = {
     navs:[
-        {id:1,title:'首页',ico:'home',path:'/'},
+        {id:1,title:'首页',ico:'home',path:'/Home'},
         {id:2,title:'分类',ico:'home',path:'/ClassiFication'},
         {id:3,title:'购物车',ico:'cart',path:'/Car'},
         {id:4,title:'我的',ico:'me',path:'/Me'}

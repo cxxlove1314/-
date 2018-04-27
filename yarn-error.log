@@ -1,0 +1,32 @@
+Arguments: 
+  E:\安装\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js start
+
+PATH: 
+  C:\Ruby23-x64\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;E:\安装\;;E:\安装\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\AppServ\Apache2.2\bin;C:\AppServ\php5;C:\AppServ\MySQL\bin;E:\安装\Microsoft VS Code\bin;C:\Users\Administrator.PC-20171130ZPQU\AppData\Roaming\npm;C:\Users\Administrator.PC-20171130ZPQU\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.9.3
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Couldn't find a package.json file in "C:\\Users\\Administrator.PC-20171130ZPQU\\Desktop\\react-MLS"
+      at new MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:40048:15
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:98:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:109:13
+      at <anonymous>
