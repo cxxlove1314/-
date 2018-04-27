@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-
-import { Route , Switch , Redirect , withRouter} from 'react-router-dom'
+import { Route , Switch ,   withRouter} from 'react-router-dom'
 import { Provider } from 'react-redux'
-
+import './style/rem.js'
 import store from './store'
 
 
 
 import Header from './JavaScript/commons/Header' 
 import Footer from './JavaScript/commons/Footer'
+import CarFooter from './JavaScript/commons/Footer/CarFooter'
+
 import { Home , ClassiFication , Me , Car   } from './JavaScript/pages'
 
  import Detailed from './JavaScript/pages/Home/Detailed'
@@ -21,15 +22,35 @@ let routers = [
 ]
 
 class App extends Component {
+
+  hasHeadr(){
+    let { pathname } = this.props.location
+    let paths = ['/Home/detailed']
+    let flag = paths.some( item => {
+          if( pathname.startsWith(item) ) {
+           
+                return true 
+          }   
+          return false      
+        })
+       
+        return !flag
+      
+  }
+
+
   render() {
     
-    {//let { pathname } = this.props.location
-  }
+  
     return (
       <Provider store={ store } >
         <div className="App">
-          
-              <Header/>
+        
+              {
+                 !this.hasHeadr()? ''  : <Header/> 
+              }
+                 
+              
               
                 <Switch>
 
@@ -46,15 +67,17 @@ class App extends Component {
 
                 </Switch>
                   
-              <Footer/>
-          
+                {
+                    !this.hasHeadr()?  <CarFooter/>  : <Footer/>
+                }
+                
         </div>
       </Provider>  
     )
   }
 }
 
-export default  App;
+export default  withRouter(App);
 // Sorry, nothing to see here.
 //  8888888
 //                8888:::8888888888888888888888888

@@ -1,22 +1,12 @@
 
 import React ,{ Component } from 'react'
-import axios from 'axios'
-
+import './banner.css'
 import Swiper from 'swiper' 
-import 'swiper/dist/css/swiper.min.css'
-
-
-
+import '../../../../../../node_modules/swiper/dist/css/swiper.min.css'
 let SwiperSlide = (props) => {
     return (
-        <div className='content'>
-            <div className="swiper-container">
-               
-                <div className="swiper-slide">Slide 1</div>
-                <div className="swiper-slide">Slide 2</div>
-                <div className="swiper-slide">Slide 3</div>
-            </div>
-            <div className="swiper-pagination"></div>
+        <div className="swiper-slide">
+            <img className='topimg' src={`${props.imgs}`} alt=""/>
         </div>
     )
 }
@@ -24,32 +14,35 @@ let SwiperSlide = (props) => {
 
 class Banner extends Component {
     render () {
+       
+        let {bannerImgs} = this.props 
         return (
-            <div>
-                
-            </div>     
+
+            <div className="swiper-container">
+                <div className="swiper-wrapper">
+                     
+                         {
+                            bannerImgs.map((item,i)=>{
+                                    return <SwiperSlide  key={i} imgs={item} />
+                            }) 
+                        } 
+                  
+                </div>
+            </div>
+
            )
     }
-      //iid=1ls9sfo&_ajax=1&cparam=
-   getBannerImg(){
-        axios.get('mls/detail/mls/v1/h5?',{
-            params:{
-                iid:'1ls9sfo' ,
-                _ajax:'1',
-                cparam:''
-            }
-        }).then((res)=>{
-            console.log(res)
-        })
-   }
-
-   componentWillMount(){
-       this.getBannerImg()
-   }
-
-
     
+    componentDidMount(){
+        new Swiper(".swiper-container", {pagination: {el: '.swiper-pagination'}})
+    }
+
+
+
+  
 }
+
+
 
 export default Banner
 

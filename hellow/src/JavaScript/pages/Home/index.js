@@ -8,7 +8,7 @@ class Home extends Component {
         let { path } = this.props.match
         
        return (
-           <div className='content'>
+           <div >
            <NavLink  to={`${path}/detailed`}> 小猪佩奇 </NavLink>
             
             <Route exact path={`${path}/detailed`} component={Detailed} />
